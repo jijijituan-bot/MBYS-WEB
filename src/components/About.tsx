@@ -42,7 +42,7 @@ const About: React.FC = () => {
                         }}>
                         <div className="aspect-w-4 aspect-h-3 rounded-2xl overflow-hidden shadow-xl">
                             <img
-                                src="https://space-static.coze.site/coze_space/7616268465607311651/upload/%E5%9B%BE%E7%89%873_1638x1190.png?sign=1775896546-92e9c6fe84-0-7bec63e1e05f53ec24431ce56325edba63eb82124539924fd7eab13503e8dc3e"
+                                src="https://i.ibb.co/5hb1Wh7M/77afeece4337.png"
                                 alt="公司办公环境"
                                 className="w-full h-full object-cover" />
                         </div>
