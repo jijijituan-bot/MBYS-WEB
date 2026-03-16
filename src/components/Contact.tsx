@@ -49,7 +49,8 @@ const Contact: React.FC = () => {
      }, {
         icon: "fa-phone-office",
         title: "官方电话",
-        value: "（86）0755-23491100"
+        value: "（86）0755-23491100",
+        customIcon: "https://i.ibb.co/8Rnq1wN/fffd7c23cfbc.png"
     }, {
         icon: "fa-headset",
         title: "选型报价",
@@ -131,7 +132,7 @@ const Contact: React.FC = () => {
                                         className="block w-full h-full"
                                     >
                                         <img
-                                            src="https://space-static.coze.site/coze_space/7616268465607311651/upload/%E5%9B%BE%E7%89%871_1638x1190.png?sign=1775894525-17698d227a-0-7bcab554538d82bcaea8cc79aa700d3efeab291dc10026b3a2286f7d0cac54ff"
+                                            src="https://i.ibb.co/bjvmNw5W/3f8dfc90e5fc.png"
                                             alt="百度地图显示"
                                             className="w-full h-full object-cover" />
                                     </a>
@@ -190,7 +191,11 @@ const Contact: React.FC = () => {
                         <div className="space-y-4 flex-grow">
                             {contactInfo.map((info, index) => <div key={index} className="flex items-start p-3 rounded-lg hover:bg-gray-50 transition-colors">
                                 <div className="flex-shrink-0 bg-blue-100 rounded-full p-3">
-                                    <i className={`fa-solid ${info.icon} text-xl text-blue-600`}></i>
+                                    {info.customIcon ? (
+                                        <img src={info.customIcon} alt={info.title} className="w-6 h-6" />
+                                    ) : (
+                                        <i className={`fa-solid ${info.icon} text-xl text-blue-600`}></i>
+                                    )}
                                 </div>
                                 <div className="ml-4">
                                     <h4 className="font-medium text-gray-900">{info.title}</h4>
